@@ -47,6 +47,15 @@ sudo i2cdetect -y 1
 python3 stats.py
 ```
 
+## Run on boot
+
+```bash
+crontab -e
+
+# Add this line to the end of the file.
+@reboot python3 /path/to/stats.py &
+```
+
 ## Icons
 
 [Line Awesome](https://icons8.com/line-awesome)
